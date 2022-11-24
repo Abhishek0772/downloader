@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
 function App() {
-  const [download, setdownload] = useState('');
-  const values = download ? true : false
+  const [downloads, setdownload] = useState('');
+  const values = downloads ? true : false
 
   console.log(values)
   return (
@@ -12,7 +12,7 @@ function App() {
         <input type="text" onChange={(e) => {
           setdownload(e.target.value)
         }} required className='border-[1px] border-black py-2 w-72 rounded-md bg-transparent' placeholder='enter you want to download text-white' />
-        <button  className='border-[1px] border-black p-2 my-4 text-white'><a download={values} href={download} >
+        <button  className='border-[1px] border-black p-2 my-4 text-white'><a download href={downloads} >
           DOWNLOAD</a></button>
       </div>
 
