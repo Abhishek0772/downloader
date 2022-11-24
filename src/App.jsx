@@ -12,7 +12,7 @@ function App() {
         <input type="text" onChange={(e) => {
           setdownload(e.target.value)
         }} required className='border-[1px] border-black py-2 w-72 rounded-md bg-transparent' placeholder='enter you want to download text-white' />
-        <button download={values} className='border-[1px] border-black p-2 my-4 text-white'><a href={download} >
+        <button  className='border-[1px] border-black p-2 my-4 text-white'><a download={values} href={download} >
           DOWNLOAD</a></button>
       </div>
 
