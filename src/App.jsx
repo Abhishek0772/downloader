@@ -12,7 +12,7 @@ console.log(values)
         <input type="text" onChange={(e)=>{
           setdownload(e.target.value)
         }} required className='border-[1px] border-black py-2 w-72 rounded-md bg-transparent' placeholder='enter you want to download text-white'/>
-        <button className='border-[1px] border-black p-2 my-4 text-white'><a href='' download={values}>
+        <button className='border-[1px] border-black p-2 my-4 text-white'><a href={download} download={values}>
           DOWNLOAD</a></button>
       </div>
         
